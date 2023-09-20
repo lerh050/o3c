@@ -95,6 +95,7 @@ Have fun!
 ‎
 ‎
 #Index
+-> ==***Are you a newcomer? Check out Calibration - > Rundown of switch parameters first.***== <-
 [TOC2]
 
 ***
@@ -216,7 +217,7 @@ You can have it as small as 0.05mm, but that tends to cause accidental and unwan
 
 !!! warning HOWEVER,
 	there's a certain quirk involved if your actuation point is particularly high up (<0.90mm)
-	in that it chatters an especially lot; to remedy this, extend the distance to 0.15mm minimum instead of 0.10mm.
+	in that it chatters a special lot; to remedy this, extend the distance to 0.15mm minimum instead of 0.10mm.
 
 For example:
 
@@ -344,8 +345,8 @@ The general recommendation is to not use anything lower than 0.15mm for both of 
 
 2. Set [RT Top] and [RT Bottom] both to 0.00mm
 
-3. Your [Actuation Point] is whatever you want in [Trigger], minus how big you want it to be resulting in [Release]
-(for example, if I want a 0.10mm big actuation point at 3.2mm, I'll set my [Trigger] to 3.20mm and [Release] to 0.10mm)
+3. Your [Actuation Point] is whatever you want in [Trigger], minus how long you want it to be resulting in [Release]
+(for example, if I want a 0.10mm long actuation point at 3.2mm, I'll set my [Trigger] to 3.20mm and [Release] to 0.10mm)
 
 ->==**What**==<-
 
@@ -477,7 +478,8 @@ The end.
 
 ->==**How?**==<-
 
-!!! Use `Google Chrome/Chromium`, `Microsoft Edge` or `Opera` for this! Firefox and other browsers do not support WebHID which the site uses to communicate with the keypad.
+!!! Use `Google Chrome/Chromium`, `Microsoft Edge` or `Opera` for this!
+	Firefox and other browsers do not support WebHID which the site uses to communicate with the keypad.
 !!! 🤓 ***[FOR LINUX USERS]*** Some changes must be made to udev rules. 
 	`sudo wget -P /etc/udev/rules.d https://dl.sayobot.cn/98-saybot.rules` and `sudo udevadm control --reload-rules`.
 	A reboot might also be necessary.
