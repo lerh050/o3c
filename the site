@@ -438,8 +438,8 @@ The end.
 ->==**How?**==<-
 
 !!! Use `Google Chrome/Chromium`, `Microsoft Edge` or `Opera` for this! Firefox and other browsers do not support WebHID which the site uses to communicate with the keypad.
-!!! 🤓 [LINUX] users must make some changes to their udev rules. `sudo wget -P /etc/udev/rules.d https://dl.sayobot.cn/98-saybot.rules` and `sudo udevadm control --reload-rules`
-1. Plug in your keypad. If necessary, plug it while *holding down the knob.*
+!!! 🤓 [LINUX] users must make some changes to their udev rules. `sudo wget -P /etc/udev/rules.d https://dl.sayobot.cn/98-saybot.rules` and `sudo udevadm control --reload-rules`. A reboot might also be necessary.
+1. Plug in your keypad. If necessary, plug it in while *holding down the knob.*
 
 2. Go to `sayodevice.com` and select your device when asked
 ![just like this.](https://images2.imgbox.com/d3/05/mJxNZfUa_o.png)
