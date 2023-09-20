@@ -196,7 +196,7 @@ Expending some data resolution/granularity is recommended to build some toleranc
 Click the value to set it. Turn left/right to respectively increase/decrease, each notch you feel is 0.05mm.
 You can always click again to exit the visualiser and see what value you're at in numbers.
 
--> [Trigger] & [Release] <-
+-> ==**[Trigger] & [Release]**== <-
 
 Every distance before [Release] is practically considered a "top deadzone", in that whatever happens there is effectively ignored.
 (for example, if my [Release] is 0.69mm then 0.00mm -> 0.68mm is my "top deadzone") 
@@ -229,7 +229,7 @@ and set my [Release] to 1.00mm so that it also takes me exactly 0.10mm to releas
 
 
 
--> [RT Top] and [RT End] <-
+-> ==**[RT Top] and [RT End]**== <-
 
 Both of these constitute the area in which Rapid Trigger is effective, which shall be referred to as [RT Area]
 
@@ -243,15 +243,15 @@ For most people, the only time you'll ever want to touch this variable is if you
 Or if you're some freak who has their own ideas about how their gameplay should be, I dunno.
 
 
--> [RT Trigger] and [RT Release]
+-> ==**[RT Trigger] and [RT Release]== <-
 
 Those two variables take effect only in the [RT Area]. They govern operational sensitivity.
 
-[RT Trigger] controls how far you have to press down for the key to register a click and be known as holding down in [RT Zone].
+[RT Trigger] controls how far you have to press down for the key to register a click and transfer into a "held down" state in [RT Area].
 
-[RT Release] controls how far you have to release the key from its "held down" state for it unpress in [RT Zone].
+[RT Release] controls how far you have to release the key from its "held down" state for it unpress in [RT Area].
 
-The general recommendation is to not use anything lower than 0.15mm for both of them.
+The general recommendation is to not use anything lower than 0.15mm for both of them. Unwanted inputs may occur otherwise.
 
 
 
@@ -334,7 +334,7 @@ The general recommendation is to not use anything lower than 0.15mm for both of 
 ‎
 ‎
 ‎
-###Static Actuation Point
+###Disable Rapid Trigger
 ***
 [go back?](https://rentry.co/o3c#index)
 
@@ -342,15 +342,16 @@ The general recommendation is to not use anything lower than 0.15mm for both of 
 
 1. **Calibrate** the switch PROPERLY. Press all the way down gently, until you feel the bottom out.
 
-2. Set **release** to `79x0.05` (aka max), **press** to `1x0.05` (aka minimum)
+2. Set [RT Top] and [RT Bottom] both to 0.00mm
 
-3. Your **Deadzone** is your `Static Actuation Point`. 2mm deadzone = 2mm actuation point
+3. Your [Actuation Point] is whatever you want in [Trigger], minus how big you want it to be resulting in [Release]
+(for example, if I want a 0.10mm big actuation point at 3.2mm, I'll set my [Trigger] to 3.20mm and [Release] to 0.10mm)
 
 ->==**What**==<-
 
-So I want 3.2mm actuation point.
+So I want a 3.2mm actuation point.
 
-I do step `1`, `2` and set `Deadzone` to `3.2mm`
+I do step `1`, `2` and set my [Trigger] to 3.20mm and [Release] to 0.10mm
 
 The end.
 ‎
