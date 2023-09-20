@@ -205,13 +205,13 @@ Both of these constitute an [Actuation Point], like in normal switches.
 
 [Trigger] should always be bigger than [Release].
 
-When the switch goes through [Trigger], the keypad considers it as pressing down the switch and will remember it.
-You may then press down as much as you like, until one of those things happen:
+When the switch goes through [Trigger], the keypad registers a click and puts it into an "held-down" state.
+You may then press down as much as you like, until one of those things happens:
 1. You release back to whatever Release was set to, as that's the absolute release point for whatever's going on.
 2. You're in the [RT Area] and release back to whatever [RT Release] was set to.
 ***With this, it's safe to consider that [Release] and [Trigger] are like absolute on/off switches for the entire keypad's operation.***
 
-The distance between both of them denotes how big your actuation point is, and it should be ideally be at least 0.10mm.
+The distance between both of them denotes how big your actuation point is, and it should ideally be at least 0.10mm.
 You can have it as small as 0.05mm, but that tends to cause accidental and unwanted presses due to sensor chatter.
 
 !!! warning HOWEVER,
