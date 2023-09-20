@@ -152,7 +152,8 @@ Have fun!
 
 4. Press all the way down to get the switch's full raw data.
 
-5. Now calibrate again, but only 95% or 90% of the full raw data of that switch. *For example*, if you got 1000 raw data calibrate to around 950, 900 or whatever. It doesn't have to be really accurate.
+5. Now calibrate again, but only 95% or 90% of the full raw data of that switch (you have to hold steadily until you reach the value, there's no going back up)
+*For example*, if you got 1000 raw data calibrate to around 950, 900 or whatever. It doesn't have to be really accurate.
 
 6. You're set to go.
 
@@ -185,37 +186,53 @@ Expending some data resolution/granularity is recommended to build some toleranc
 ‎
 ‎
 ‎
-### Deadzone
+### Rundown of switch parameters
 ***
 [go back?](https://rentry.co/o3c#index)
 
--> ==**How?**== <-
+***All*** values are ***RELATIVE*** to the switch's top, and they are built on the assumption that you're using ***4mm travel switches***. 
+(might wanna check the [HE switches chart](https://rentry.co/o3c#he-switches-chart) out)
 
-Deadzone works by *completely* ignoring the defined section, like so:
+Click the value to set it. Turn left/right to respectively increase/decrease, each notch you feel is 0.05mm.
+You can always click again to exit the visualiser and see what value you're at in numbers.
 
->SayoDevice o3c, `X` Deadzone, `0.2mm` Press, `0.2mm` Release
-("X" is whatever raw value you set it to. To convert mm => raw check [this](https://rentry.co/o3c/edit#static-actuation-point))
-‎
-‎
--> Your finger => [X Deadzone] => [`0.2mm` Press] => [*clicks* + key is remembered as being held down] => [`0.2mm` Release] <-
-‎
-‎
-‎
-‎
--> ==**What**== <-
+-> [Trigger] & [Release] <-
 
-Deadzone is *not the same* as an Actuation Point (not to be confused with the [Static Actuation Point workaround](https://rentry.co/o3c/edit#static-actuation-point)) on Wooting's implementation. This is how the implementation works:
+Every distance before [Release] is practically considered a "top deadzone", in that whatever happens there is effectively ignored.
+(for example, if my [Release] is 0.69mm then 0.00mm -> 0.68mm is my "top deadzone") 
 
->Wooting Two HE, `0.4mm` Actuation Point, `0.2mm` Press, `0.2mm` Release
-‎
-‎
--> Your finger => [`0.4mm` Actuation Point] => [*clicks* + key is remembered as being held down] => [if you press down more nothing happens as you're already pressing] / [if you press down to `1mm` and release `0.2mm` the key will release at `0.8mm`] <-
-‎
-‎
-‎
-‎
--> It's a different feeling. <-
-‎
+Both of these constitute an actuation point, like in normal switches.
+
+[Trigger] should always be bigger than [Release].
+
+When the switch goes through [Trigger], the keypad considers it as pressing down the switch and will remember it.
+You may then press down as much as you like, until one of those things happen:
+1. You release back to whatever Release was set to, as that's the absolute release point for whatever's going on.
+2. You're in the [RT Zone] and release back to whatever [RT Release] was set to.
+
+The distance between both of them denotes how big your actuation point is, and it should be ideally be at least 0.10mm.
+You can have it as small as 0.05mm, but that tends to cause accidental and unwanted presses due to sensor chatter.
+
+!!! warning HOWEVER,
+	there's a certain quirk involved if your actuation point is particularly high up (<0.90mm)
+	in that it chatters an especially lot; to remedy this, extend the distance to 0.15mm minimum instead of 0.10mm.
+
+For example:
+
+I want an actuation point that's 0.10mm long, starting from 1.00mm of the switch.
+
+What I would like to do is: 
+
+Set my [Trigger] to 1.10mm so that it takes me 0.10mm from 1.00ccmm of the switch to actuate,
+and set my [Release] to 1.00mm so that it also takes me exactly 0.10mm to release the key. 
+
+
+
+-> RT Top and RT Bottom <-
+
+Both of these constitute the area in which Rapid Trigger is effective.
+
+
 ‎
 ‎
 ‎
