@@ -835,7 +835,7 @@ Due to how janky the editor is, it's recommended to artificially enlarge your ca
 ***
 [go back?](https://rentry.co/o3c#index)
 
-Raw values are grabbed on the **latest firmware version.**
+Raw values are grabbed on the **latest firmware version** and **north facing** (raw value can change quite substantially depending on switch orientation, usually less when south facing)
 
 Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Raw Units (approx. range) | Where to get | OEM | Notes |
 :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
