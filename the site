@@ -215,9 +215,9 @@ You may then press down as much as you like, until one of those things happens:
 The distance between both of them denotes how big your [Actuation Point] is, and it should ideally be at least 0.10mm.
 You can have it as small as 0.05mm, but that tends to cause accidental and unwanted presses due to sensor chatter.
 
-!!! warning HOWEVER,
-	there's a certain quirk involved if your actuation point is particularly high up (<0.90mm) [see video](https://lerh050.s-ul.eu/NjZ0YjMf)
-	in that it chatters a special lot; to remedy this, extend the distance to 0.15mm minimum instead of 0.10mm. [see video](https://lerh050.s-ul.eu/hCyP9ATj)
+!!! warning HOWEVER,there's a funny quirk.
+	If your [Actuation Point] is high up and is 0.10mm or smaller, it can cause random chatter at the top. [see video](https://lerh050.s-ul.eu/NjZ0YjMf)
+To fix this, extend the distance to 0.15mm minimum instead of 0.10mm. [see video](https://lerh050.s-ul.eu/hCyP9ATj)
 
 For example:
 
