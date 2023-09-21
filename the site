@@ -6,11 +6,12 @@ In addition to that, *tips and tricks*. Even *troubleshooting solutions.*
 
 This site is *not* affiliated with any official Sayo personnel.
 
-Start with checking the [*Index*](https://rentry.co/o3c#index).
+Start with checking the [*Index*](https://rentry.co/o3c#index). 
 
 Or check [FAQ](https://rentry.co/o3c#faq) if you have some questions regarding the site.
 
 Have fun!
+
 -> ![oklahoma state university](https://lerh050.s-ul.eu/ubw6fqJX) <-
 
 ‎
@@ -95,7 +96,8 @@ Have fun!
 ‎
 ‎
 #Index
--> ==***Are you a newcomer? Check out Calibration - > Rundown of switch parameters first.***== <-
+#-> [Light mode here....](https://rentry.co/o3c#light-mode-here-click) <-
+-> ==***Are you a newcomer? Check out [Calibration] - > [Rundown of switch parameters] first.***== <-
 [TOC2]
 
 ***
@@ -215,9 +217,9 @@ You may then press down as much as you like, until one of those things happens:
 The distance between both of them denotes how big your [Actuation Point] is, and it should ideally be at least 0.10mm.
 You can have it as small as 0.05mm, but that tends to cause accidental and unwanted presses due to sensor chatter.
 
-!!! warning HOWEVER,there's a funny quirk.
-	If your [Actuation Point] is high up and is 0.10mm or smaller, it can cause random chatter at the top. [see video](https://lerh050.s-ul.eu/NjZ0YjMf)
-To fix this, extend the distance to 0.15mm minimum instead of 0.10mm. [see video](https://lerh050.s-ul.eu/hCyP9ATj)
+!!! warning HOWEVER,
+	there's a certain quirk involved if your actuation point is particularly high up (<0.90mm) [see video](https://lerh050.s-ul.eu/NjZ0YjMf)
+	in that it chatters a special lot; to remedy this, extend the distance to 0.15mm minimum instead of 0.10mm. [see video](https://lerh050.s-ul.eu/hCyP9ATj)
 
 For example:
 
@@ -254,8 +256,6 @@ Those two variables take effect only in the [RT Area]. They govern operational s
 [RT Trigger] controls how far you have to press down for the key to register a click and transfer into a "held down" state in [RT Area].
 
 [RT Release] controls how far you have to release the key from its "held down" state for it unpress in [RT Area].
-
-As with all other variables, change them according to your OWN preferences and comfort.
 
 The general recommendation is to not use anything lower than 0.15mm for both of them. Unwanted inputs may occur otherwise.
 
@@ -625,13 +625,7 @@ The end.
 
 -> ==**How?**== <-
 
-Aligned to the top left corner, every single piece of media (GIFs are split into and processed frame by frame, then the file size for each frame is added together with no additional compression) goes through the following things:
-
-1. They are first downscaled by the software (very basic and ugly, only bilinar filtering)
-
-2. They're then converted to raw raster data. This could undo particularly deep image optimisation methods.
-
-3. Then they get put through the following algorithm
+Aligned to the top left corner, every single piece of media (GIFs are split into and processed frame by frame) is first downscaled to [the resolution you pick] and converted to raw raster data (2 bits per frame), then put through the following algorithm:
 
 -> ![ok](https://images2.imgbox.com/e0/2b/ZiuZoTAt_o.png) <-
 
@@ -646,7 +640,7 @@ Optimise your resolution when importing! This has a major impact. *For example*,
 
 !!! danger Aspect ratios below 1:1 (say, 79:80) WILL break the selector!!! Try to work around that for now.
 
-The processing is consistent and will result in around the same result (quality and file size after compression) all the time no matter how much you optimise your source material.
+The processing is consistent and will result in around the same result (quality and file size) all the time no matter how much you optimise your source material.
 
 Despite this, you should still do the downscaling yourself with better algorithms (ImageMagick at [ezgif](https://ezgif.com/resize)). The software sucks ass at scaling (very basic, literally just bilinear filtering and nothing else).
 
@@ -888,11 +882,9 @@ Due to how janky the editor is, it's recommended to artificially enlarge your ca
 ***
 [go back?](https://rentry.co/o3c#index)
 
-Max raws are grabbed on the **latest firmware version** and **north facing**
-(Max raw can change quite substantially depending on switch orientation, usually less when south facing)
+Raw values are grabbed on the **latest firmware version** and **north facing** (raw value can change quite substantially depending on switch orientation, usually less when south facing)
 
-(Note: you can drag/scroll the chart around)
-Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max Raw (approx. range) | Where to get | OEM | Notes |
+Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max Raw Units (approx. range) | Where to get | OEM | Notes |
 :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 ![Linear60 by Wooting](https://images2.imgbox.com/34/50/8UHZVGRH_o.png)|	Lekker Linear60	|	40/60gf	|	None/4mm	|	Linear	|	~1800-2200	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear60)|	Gateron	||
 ![Linear45 by Wooting](https://images2.imgbox.com/2c/42/TJeSq5mB_o.png)|	Lekker Linear45	|	30/45gf	|	None/4mm	|	Linear	|	~1800-2200	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear45)|	Gateron	||
@@ -1024,7 +1016,7 @@ Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max R
 ‎
 ‎
 ## Downloads
-Those are download links directly grabbed from official channels (discord server, site, etc...).
+Those are download links directly grabbed from official channels (discord server, site, etc).
 ‎
 ‎
 ‎
@@ -1034,7 +1026,6 @@ Those are download links directly grabbed from official channels (discord server
 ‎
 ‎
 ### Firmware & Software
-Flash the firmware by double clicking the upgrade.bat file, always.
 ***
 [go back?](https://rentry.co/o3c#index)
 
@@ -1348,7 +1339,7 @@ A: No one.
 ‎
 ‎
 Q: Who contributes?
-A: See below.
+A: Sections that were written by contributors (often on translations) will have proper credits. Attachments will have their ownership credited in the hover description. (if there's none then the image was from me lol)
 ‎
 ‎
 ‎
@@ -1356,3 +1347,7 @@ Q: How do I contribute?
 A: On [GitHub](https://github.com/lerh050/o3c/). The site is looking for translations, proofreaders, or just DM @lerh050 on Discord if you think whatever else you have can be of reasonable use to the site, really.
 
 ***
+-> [***go back?***](https://rentry.co/o3c#index) ->
+-> ***(click it again to return to dark mode)*** ->
+#-> light mode here (click🌙) ->
+#-> ↓↓↓↓↓↓↓ ->
