@@ -623,7 +623,13 @@ The end.
 
 -> ==**How?**== <-
 
-Aligned to the top left corner, every single piece of media (GIFs are split into and processed frame by frame) is first downscaled to [the resolution you pick] and converted to raw raster data (2 bits per frame), then put through the following algorithm:
+Aligned to the top left corner, every single piece of media (GIFs are split into and processed frame by frame, then the file size for each frame is added together with no additional compression) goes through the following things:
+
+1. They are first downscaled by the software (very basic and ugly, only bilinar filtering)
+
+2. They're then converted to raw raster data. This could undo particularly deep image optimisation methods.
+
+3. Then they get put through the following algorithm
 
 -> ![ok](https://images2.imgbox.com/e0/2b/ZiuZoTAt_o.png) <-
 
@@ -638,7 +644,7 @@ Optimise your resolution when importing! This has a major impact. *For example*,
 
 !!! danger Aspect ratios below 1:1 (say, 79:80) WILL break the selector!!! Try to work around that for now.
 
-The processing is consistent and will result in around the same result (quality and file size) all the time no matter how much you optimise your source material.
+The processing is consistent and will result in around the same result (quality and file size after compression) all the time no matter how much you optimise your source material.
 
 Despite this, you should still do the downscaling yourself with better algorithms (ImageMagick at [ezgif](https://ezgif.com/resize)). The software sucks ass at scaling (very basic, literally just bilinear filtering and nothing else).
 
@@ -880,9 +886,11 @@ Due to how janky the editor is, it's recommended to artificially enlarge your ca
 ***
 [go back?](https://rentry.co/o3c#index)
 
-Raw values are grabbed on the **latest firmware version** and **north facing** (raw value can change quite substantially depending on switch orientation, usually less when south facing)
+Max raws are grabbed on the **latest firmware version** and **north facing**
+(Max raw can change quite substantially depending on switch orientation, usually less when south facing)
 
-Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Raw Units (approx. range) | Where to get | OEM | Notes |
+(Note: you can drag/scroll the chart around)
+Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max Raw (approx. range) | Where to get | OEM | Notes |
 :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 ![Linear60 by Wooting](https://images2.imgbox.com/34/50/8UHZVGRH_o.png)|	Lekker Linear60	|	40/60gf	|	None/4mm	|	Linear	|	~1800-2200	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear60)|	Gateron	||
 ![Linear45 by Wooting](https://images2.imgbox.com/2c/42/TJeSq5mB_o.png)|	Lekker Linear45	|	30/45gf	|	None/4mm	|	Linear	|	~1800-2200	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear45)|	Gateron	||
@@ -1014,7 +1022,7 @@ Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Raw U
 ‎
 ‎
 ## Downloads
-Those are download links directly grabbed from official channels (discord server, site, etc).
+Those are download links directly grabbed from official channels (discord server, site, etc...).
 ‎
 ‎
 ‎
@@ -1024,6 +1032,7 @@ Those are download links directly grabbed from official channels (discord server
 ‎
 ‎
 ### Firmware & Software
+Flash the firmware by double clicking the upgrade.bat file, always.
 ***
 [go back?](https://rentry.co/o3c#index)
 
@@ -1337,7 +1346,7 @@ A: No one.
 ‎
 ‎
 Q: Who contributes?
-A: Sections that were written by contributors (often on translations) will have proper credits. Attachments will have their ownership credited in the hover description. (if there's none then the image was from me lol)
+A: See below.
 ‎
 ‎
 ‎
