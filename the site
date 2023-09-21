@@ -255,6 +255,8 @@ Those two variables take effect only in the [RT Area]. They govern operational s
 
 [RT Release] controls how far you have to release the key from its "held down" state for it unpress in [RT Area].
 
+As with all other variables, change them according to your OWN preferences and comfort.
+
 The general recommendation is to not use anything lower than 0.15mm for both of them. Unwanted inputs may occur otherwise.
 
 
