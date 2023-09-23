@@ -254,7 +254,7 @@ For most people, the only time you'll ever want to touch this is:
 1. Your fingers are too shaky when holding down sliders, in which case you'll want to reduce it so that you won't accidentally trigger [RT Release]. This creates an "end deadzone" for your shake.
 2. Kinda like above, if you're experiencing sudden key release in general *when bottoming out*, reducing it will often help in most cases.
 3. [Disable Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger)
-(the default value is already perfect though so you'll just be barely ever touching this)
+(the default value is already perfect though, so you'll just be barely ever touching this)
 
 Or if you're some freak who has their own ideas about how their gameplay should be, I dunno.
 
@@ -273,7 +273,7 @@ As with all other variables, change them according to your OWN preferences and c
 
 
 #### -> ==***Continuous Rapid Trigger***== <-
--> ==*This "mode" is activated when you set [Trigger] equal to your [RT End]. (for example, 3.95mm [Trigger] and 3.95mm [RT End])*== <-
+-> ==*This "mode" is activated when you set your [RT Top] to `0.00mm`, and [Trigger] EQUAL to your [RT End]. (for example, `3.95mm` [Trigger] and `3.95mm` [RT End])*== <-
 -> (This is also how older firmware versions work.) ->
 
 In this mode, the keypad basically works like Normal Rapid Trigger without an [Actuation Point].
@@ -282,7 +282,7 @@ In this mode, the keypad basically works like Normal Rapid Trigger without an [A
 
 You can still use [RT End] and [Trigger] to set a "bottom deadzone". (for example, on 3.70mm for both the keypad will ignore 0.30mm at the bottom)
 (if you're looking to copy your old settings then just set it to 3.95mm, as the old firmwares never really had a bottom deadzone)
-
+(also, if you're looking to copy your old settings, you can just keep [Press] and [Release] the same as before) 
 ***
 ‎
 ‎
