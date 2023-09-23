@@ -247,11 +247,13 @@ Both of these constitute the area in which Rapid Trigger is effective, which sha
 [RT Top] defines the top of [RT Area].
 If you wish to use Rapid Trigger all the time, just set it to equal to your [Trigger].
 Any other value is for advanced usecases (such as only wanting to use rapid trigger for half of the switch, etc...)
+[Continuous Rapid Trigger](https://rentry.co/o3c#continuous-rapid-trigger) and [Disable Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger) also makes special use of this.
 
 [RT End] defines the bottom of [RT Area].
 For most people, the only time you'll ever want to touch this is:
 1. Your fingers are too shaky when holding down sliders, in which case you'll want to reduce it so that you won't accidentally trigger [RT Release]. This creates an "end deadzone" for your shake.
 2. Kinda like above, if you're experiencing sudden key release in general *when bottoming out*, reducing it will often help in most cases.
+3. [Disable Rapid Trigger](https://rentry.co/o3c#disable-rapid-trigger)
 (the default value is already perfect though so you'll just be barely ever touching this)
 
 Or if you're some freak who has their own ideas about how their gameplay should be, I dunno.
