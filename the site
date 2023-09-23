@@ -11,12 +11,9 @@ Start with checking the [*Index*](https://rentry.co/o3c#index).
 Or check [FAQ](https://rentry.co/o3c#faq) if you have some questions regarding the site.
 
 Have fun!
--> ![burunyu](https://images2.imgbox.com/48/0e/vWFJFyjd_o.jpg) <-
+-> ![wat](https://lerh050.s-ul.eu/8FVXvPJU) <-
 
-‎
-‎
-‎
-#🇷🇺🇨🇳🇯🇵🇮🇹 Languages 🇷🇺🇨🇳🇯🇵🇮🇹
+#🇷🇺🇨🇳 Languages 🇷🇺🇨🇳
 - [English 🇺🇸](https://rentry.co/o3c#index)
 - [Russian 🇷🇺](https://rentry.co/o3cru)
 - [Ukrainian 🇺🇦](https://rentry.co/o3cua)
@@ -144,7 +141,7 @@ Have fun!
 ***
 [go back?](https://rentry.co/o3c#index)
 
-->==**How?**==<-
+######->==**How?**==<-
 
 1. **Press** and **Hold** the knob.
 
@@ -155,19 +152,30 @@ Have fun!
 4. Press all the way down to get the switch's full raw data.
 
 5. Now calibrate again, but only 95% or 90% of the full raw data of that switch (you have to hold steadily until you reach the value, there's no going back up)
-*For example*, if you got 1000 raw data calibrate to around 950, 900 or whatever. It doesn't have to be really accurate.
+*For example*, if you got 1000 raw data, calibrate to around 950, 900 or whatever. It doesn't have to be really accurate.
 
 6. You're set to go.
 
-->==**What**==<-
+###### ->==**What**==<-
 
 The full range of the switch is already known by the keypad, separate from calibration.
 
 The "calibration" process basically just downscales that range for actual use in the input handling process. Think converting a 1080p picture to 480p.
 
-Expending some data resolution/granularity is recommended to build some tolerance for more stability in input handling (eliminating sudden key releases, doubletaps, etc)
+Expending some data resolution/granularity is recommended to build some tolerance for more stability in input handling (eliminating sudden key releases, doubletaps, etc...)
 
 ***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
 ‎
 ‎
 ‎
@@ -195,13 +203,15 @@ Expending some data resolution/granularity is recommended to build some toleranc
 ***All*** values are ***RELATIVE*** to the switch's top (0.00mm), and they are built on the assumption that you're using ***4mm travel switches***. 
 (might wanna check the [HE switches chart](https://rentry.co/o3c#he-switches-chart) out)
 
-Click the value to set it. Turn left/right to respectively increase/decrease, each notch you feel is 0.05mm.
+Click the value to set it. Turn left/right to respectively increase/decrease, each notch you feel is `0.05mm`.
 You can always click again to exit the visualiser and see what value you're at in numbers.
 
--> ==**[Trigger] & [Release]**== <-
+#### -> ==***Normal Rapid Trigger***== <-
 
-Every distance before [Release] is practically considered a "top deadzone", in that whatever happens there is effectively ignored.
-(for example, if my [Release] is 0.69mm then 0.00mm -> 0.68mm is my "top deadzone") 
+###### -> ==[Trigger] and [Release]== <-
+
+Every distance before [Release] is  considered a "top deadzone", in that whatever happens there is effectively ignored.
+(for example, if my [Release] is `0.69mm` then `0.00mm` -> `0.68mm` is my "top deadzone") 
 
 Both of these constitute an [Actuation Point], like in normal switches.
 
@@ -213,42 +223,41 @@ You may then press down as much as you like, until one of those things happens:
 2. You're in the [RT Area] and release back to whatever [RT Release] was set to.
 ***With this, it's safe to consider that [Release] and [Trigger] are like absolute on/off switches for the entire keypad's operation.***
 
-The distance between both of them denotes how big your [Actuation Point] is, and it should ideally be at least 0.10mm.
-You can have it as small as 0.05mm, but that tends to cause accidental and unwanted presses due to sensor chatter.
+The distance between both of them denotes how big your [Actuation Point] is, and it should ideally be at least `0.10mm`.
+You can have it as small as `0.05mm`, but that tends to cause accidental and unwanted presses due to sensor chatter.
 
-!!! warning HOWEVER,there's a funny quirk.
-	If your [Actuation Point] is high up and is 0.10mm or smaller, it can cause random chatter at the top. [see video](https://lerh050.s-ul.eu/NjZ0YjMf)
-To fix this, extend the distance to 0.15mm minimum instead of 0.10mm. [see video](https://lerh050.s-ul.eu/hCyP9ATj)
+!!! warning HOWEVER, there's a funny quirk.
+	If your [Actuation Point] is high up and is `0.10mm` or smaller, it can cause random key presses at the top. [see video](https://lerh050.s-ul.eu/NjZ0YjMf)
+	To fix this, extend the distance to `0.15mm` minimum (perhaps even more if it still happens) instead of 0.10mm. [see video](https://lerh050.s-ul.eu/hCyP9ATj)
 
 For example:
 
-I want a 0.10mm long [Actuation Point] at 3.00mm
+I want a `0.20mm` long [Actuation Point] at `0.30mm`
 
 What I would like to do is: 
 
-Set my [Trigger] to 3.00mm so that the click registers exactly where I want it to be
-and set my [Release] to 2.90mm so that it also takes me exactly 0.10mm to release the key. 
+Set my [Trigger] to `0.30mm` so that the click registers exactly where I want it to be.
+and set my [Release] to `0.10mm` so that it also takes me exactly `0.20mm` to release the key. 
 
 
-
--> ==**[RT Top] and [RT End]**== <-
+###### -> ==[RT Top] and [RT End]== <-
 
 Both of these constitute the area in which Rapid Trigger is effective, which shall be referred to as [RT Area]
 
 [RT Top] defines the top of [RT Area].
-If you wish to use Rapid Trigger all the time, just set it to 0.00mm or equal to your [Trigger].
-Any other value is for advanced usecases (such as wanting only half of the switch to be the [RT Area], etc...)
+If you wish to use Rapid Trigger all the time, just set it to equal to your [Trigger].
+Any other value is for advanced usecases (such as only wanting to use rapid trigger for half of the switch, etc...)
 
 [RT End] defines the bottom of [RT Area].
 For most people, the only time you'll ever want to touch this is:
-1. Your fingers are too shaky when holding down sliders, in which case you'll want to reduce it so that you won't accidentally trigger [RT Release] and create an "end deadzone" for your shake.
+1. Your fingers are too shaky when holding down sliders, in which case you'll want to reduce it so that you won't accidentally trigger [RT Release]. This creates an "end deadzone" for your shake.
 2. Kinda like above, if you're experiencing sudden key release in general *when bottoming out*, reducing it will often help in most cases.
 (the default value is already perfect though so you'll just be barely ever touching this)
 
 Or if you're some freak who has their own ideas about how their gameplay should be, I dunno.
 
 
--> ==**[RT Trigger] and [RT Release]**== <-
+###### -> ==[RT Trigger] and [RT Release]== <-
 
 Those two variables take effect only in the [RT Area]. They govern operational sensitivity.
 
@@ -258,17 +267,21 @@ Those two variables take effect only in the [RT Area]. They govern operational s
 
 As with all other variables, change them according to your OWN preferences and comfort.
 
-The general recommendation is to not use anything lower than 0.15mm for both of them. Unwanted inputs may occur otherwise.
+!!! The general recommendation is to not use anything lower than `0.15mm` for both of them. Unwanted inputs may occur otherwise.
 
 
+#### -> ==***Continuous Rapid Trigger***== <-
+-> ==*This "mode" is activated when you set [Trigger] equal to your [RT End]. (for example, 3.95mm [Trigger] and 3.95mm [RT End])*== <-
+-> (This is also how older firmware versions work.) ->
 
-‎
-‎
-‎
-‎
-‎
-‎
-‎
+In this mode, the keypad basically works like Normal Rapid Trigger without an [Actuation Point].
+
+[Release] becomes the old 1.2 firmware's [Deadzone]. Anything in the [Deadzone] is completely ignored. 
+
+You can still use [RT End] and [Trigger] to set a "bottom deadzone". (for example, on 3.70mm for both the keypad will ignore 0.30mm at the bottom)
+(if you're looking to copy your old settings then just set it to 3.95mm, as the old firmwares never really had a bottom deadzone)
+
+***
 ‎
 ‎
 ‎
@@ -345,20 +358,19 @@ The general recommendation is to not use anything lower than 0.15mm for both of 
 ***
 [go back?](https://rentry.co/o3c#index)
 
-->==**How?**==<-
+###### ->==**How?**==<-
 
 1. **Calibrate** the switch PROPERLY. Press all the way down gently, until you feel the bottom out.
 
 2. Set [RT Top] and [RT Bottom] both to 0.00mm (do it with [RT Top] first)
 
 3. Your [Actuation Point] is whatever you want in [Trigger], minus how long you want it to be resulting in [Release]
-(for example, if I want a 0.10mm long actuation point at 3.20mm, I'll set my [Trigger] to 3.20mm and [Release] to 3.10mm)
 
-->==**What**==<-
+###### ->==**What**==<-
 
-So I want a 3.2mm actuation point.
+So I want a `3.2mm` actuation point.
 
-I do step `1`, `2` and set my [Trigger] to 3.20mm and [Release] to 0.10mm
+I do step `1`, `2` and set my [Trigger] to `3.20mm` and [Release] to `3.10mm`
 
 The end.
 ‎
@@ -381,6 +393,212 @@ The end.
 ‎
 ‎
 ‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Placeholder
+***
+[go back?](https://rentry.co/o3c#index)
+
+***
+‎‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Placeholder
+***
+[go back?](https://rentry.co/o3c#index)
+
+***
+‎‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
 ### Placeholder
 ***
 [go back?](https://rentry.co/o3c#index)
@@ -406,11 +624,6 @@ The end.
 ‎
 ‎
 ‎
-### Placeholder
-***
-[go back?](https://rentry.co/o3c#index)
-
-***
 ‎
 ‎
 ‎
@@ -427,15 +640,6 @@ The end.
 ‎
 ‎
 ‎
-‎
-‎
-‎
-‎
-### Placeholder
-***
-[go back?](https://rentry.co/o3c#index)
-
-***
 ‎
 ‎
 ‎
@@ -482,7 +686,7 @@ The end.
 ***
 [go back?](https://rentry.co/o3c#index)
 
-->==**How?**==<-
+###### ->==**How?**==<-
 
 !!! Use `Google Chrome/Chromium`, `Microsoft Edge` or `Opera` for this!
 	Firefox and other browsers do not support WebHID which the site uses to communicate with the keypad.
@@ -505,6 +709,58 @@ The end.
 	You might need to perform a hardware factory reset. [Click here!](https://rentry.co/o3c#hardware-factory-reset-incomplete-do-not-attempt)
 
 ***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
 ‎
 ‎
 ‎
@@ -624,7 +880,7 @@ The end.
 ***
 [go back?](https://rentry.co/o3c#index)
 
--> ==**How?**== <-
+###### -> ==**How?**== <-
 
 Aligned to the top left corner, every single piece of media (GIFs are split into and processed frame by frame, then the file size for each frame is added together with no additional compression) goes through the following things:
 
@@ -639,9 +895,9 @@ Aligned to the top left corner, every single piece of media (GIFs are split into
 This often results in a lower file size, but in rare cases it could be higher as well. This is due to the "converting to raw raster data" process.
 
 
--> ==**What**== <-
+###### -> ==**What**== <-
 
-Optimise your resolution when importing! This has a major impact. *For example*, if your GIF has a lot of frames, is square and should only fit to one side then set it to a lower resolution, like so:
+Optimise your resolution when importing! This has a MAJOR impact. *For example*, if your GIF has a lot of frames, is square and should only fit to one side then set it to a lower resolution, like so:
 
 -> ![xd](https://images2.imgbox.com/02/0c/9OqD9nfM_o.png) <-
 
@@ -651,10 +907,21 @@ The processing is consistent and will result in around the same result (quality 
 
 Despite this, you should still do the downscaling yourself with better algorithms (ImageMagick at [ezgif](https://ezgif.com/resize)). The software sucks ass at scaling (very basic, literally just bilinear filtering and nothing else).
 
-
-
 Don't worry too much about source material quality because it'll almost always look like shit all the same in the end! Have fun.
+
 ***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
 ‎
 ‎
 ‎
@@ -721,7 +988,7 @@ Don't worry too much about source material quality because it'll almost always l
 
 *It is advisable to check out [How media is imported](https://rentry.co/o3c#how-media-is-imported) first.*
 
-->==**How?**==<-
+###### ->==**How?**==<-
 
 1. Get the software for your firmware. Could always check out the [downloads](https://rentry.co/o3c/#downloads) section.
 
@@ -739,7 +1006,7 @@ Don't worry too much about source material quality because it'll almost always l
 
 5. Click this box ![yep, this](https://images2.imgbox.com/04/e8/t6VPesCO_o.png) to write the changes to your keypad.
 
--> ==**What**== <-
+###### -> ==**What**== <-
 
 Due to how janky the editor is, it's recommended to artificially enlarge your canvas for better adjustments.
 ‎
