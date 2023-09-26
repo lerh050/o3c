@@ -219,7 +219,7 @@ Both of these constitute an [Actuation Point], like in normal switches.
 
 When the switch goes through [Trigger], the keypad registers a click and puts it into an "held down" state.
 You may then press down as much as you like, until one of those things happens:
-1. You release back to whatever Release was set to, as that's the absolute release point for whatever's going on.
+1. You release back to whatever [Release] was set to, as that's the absolute release point for whatever's going on.
 2. You're in the [RT Area] and release back to whatever [RT Release] was set to.
 ***With this, it's safe to consider that [Release] and [Trigger] are like absolute on/off switches for the entire keypad's operation.***
 
@@ -269,7 +269,7 @@ Those two variables take effect only in the [RT Area]. They govern operational s
 
 As with all other variables, change them according to your OWN preferences and comfort.
 
-!!! The general recommendation is to not use anything lower than `0.15mm` for both of them. Unwanted inputs may occur otherwise.
+!!! The general recommendation is to not use anything lower than `0.20mm` for both of them. Unwanted inputs may occur otherwise.
 
 
 #### -> ==***Continuous Rapid Trigger***== <-
@@ -280,7 +280,7 @@ In this mode, the keypad basically works like Normal Rapid Trigger without an [A
 
 [Release] becomes the old 1.2 firmware's [Deadzone]. Anything in the [Deadzone] is completely ignored. 
 
-You can still use [RT End] and [Trigger] to set a "bottom deadzone". (for example, on 3.70mm for both the keypad will ignore 0.30mm at the bottom)
+You can still use [RT End] and [Trigger] to set a "bottom deadzone". (for example, on 3.70mm for both, the keypad will ignore 0.30mm at the bottom)
 (if you're looking to copy your old settings then just set it to 3.95mm, as the old firmwares never really had a bottom deadzone)
 (also, if you're looking to copy your old settings, you can just keep [Press] and [Release] the same as before) 
 ***
@@ -1170,7 +1170,8 @@ Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max R
 ![KS-20 White by Gateron](https://images2.imgbox.com/ed/2b/Os8xKgNJ_o.png)	|	Gateron KS-20 White	|	30/50gf	|	None/4mm	|	Linear	|	~800-1300	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
 ![KS-20 Orange by Gateron](https://images2.imgbox.com/de/21/7PVkMNUm_o.png)	|	Gateron KS-20 Orange	|	38/50gf	|	None/4mm	|	Linear	|	~800-1300	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
 ![Random pic lmao](https://images2.imgbox.com/6a/50/4XL6tCE8_o.png)|	Yiqian Reds	|	30/50gf	|	None/4mm	|	Linear	|	~150-800	|	Please don't.	|	[Yiqian](https://detail.1688.com/offer/642498199922.html)	|	🍀	|
-
+ 
+***
 ‎
 ‎
 ‎
@@ -1454,7 +1455,6 @@ Flash the firmware by double clicking the upgrade.bat file, always.
 ‎
 ‎
 ‎
-
 ‎
 ‎
 ‎
