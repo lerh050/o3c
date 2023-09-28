@@ -281,8 +281,8 @@ In this mode, the keypad basically works like Normal Rapid Trigger without an [A
 
 [Release] becomes the old 1.2 firmware's [Deadzone]. Anything in the [Deadzone] is completely ignored. 
 
-You can still use [RT End] and [Trigger] to set a "bottom deadzone". (for example, on 3.70mm for both the keypad will ignore 0.30mm at the bottom)
-(if you're looking to copy your old settings then just set it to 3.95mm, as the old firmwares never really had a bottom deadzone)
+You can still use [RT End] and [Trigger] to set a "bottom deadzone". (for example, on `3.70mm` for both the keypad will ignore `0.30mm` at the bottom)
+(if you're looking to copy your old settings then just set it to `3.95mm`, as the old firmwares never really had a bottom deadzone)
 (also, if you're looking to copy your old settings, you can just keep [Press] and [Release] the same as before) 
 ***
 ‎
