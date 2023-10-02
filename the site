@@ -1,4 +1,4 @@
-# SayoDevice o3c Resources
+# SayoDevice o3c(++) Resources
 
 The place for all resources related to the ***SayoDevice o3c*** keypad.
 
@@ -92,7 +92,7 @@ Have fun!
 ‎
 ‎
 #Index
-#-> [Light mode here....](https://rentry.co/o3c#light-mode-here-click) <-
+#-> [Light/dark mode here....](https://rentry.co/o3c#light-mode-here-click) <-
 -> ==***Are you a newcomer? Check out Calibration - > Rundown of switch parameters first.***== <-
 [TOC2]
 
@@ -284,6 +284,17 @@ In this mode, the keypad basically works like Normal Rapid Trigger without an [A
 You can still use [RT End] and [Trigger] to set a "bottom deadzone". (for example, on `3.70mm` for both the keypad will ignore `0.30mm` at the bottom)
 (if you're looking to copy your old settings then just set it to `3.95mm`, as the old firmwares never really had a bottom deadzone)
 (also, if you're looking to copy your old settings, you can just keep [Press] and [Release] the same as before) 
+
+For example:
+
+My old firmware settings were `0.10mm` [Deadzone], `0.20mm` [Press] and `0.25mm` [Release]
+
+To replicate these on the new firmware, I first set my [Release] to `0.10mm`, then [RT Trigger] to `0.20mm` and [RT Release] to `0.25mm`
+
+Then I set my [RT Top] to `0.00mm`, then [Trigger] and [RT End] to `3.95mm` to convert the keypad to Continuous Rapid Trigger.
+
+The end.
+
 ***
 ‎
 ‎
@@ -376,6 +387,8 @@ So I want a `3.2mm` actuation point.
 I do step `1`, `2` and set my [Trigger] to `3.20mm` and [Release] to `3.10mm`
 
 The end.
+
+***
 ‎
 ‎
 ‎
@@ -453,7 +466,7 @@ The end.
 [go back?](https://rentry.co/o3c#index)
 
 ***
-‎‎
+‎
 ‎
 ‎
 ‎
@@ -530,7 +543,7 @@ The end.
 [go back?](https://rentry.co/o3c#index)
 
 ***
-‎‎
+‎
 ‎
 ‎
 ‎
@@ -788,6 +801,50 @@ The end.
 ***
 [go back?](https://rentry.co/o3c#index)
 
+!!! danger This is still UNTESTED with the o3c++
+
+1. Download [WCHISPStudio](https://www.wch.cn/downloads/file/196.html) and install it.
+‎
+‎
+‎
+2. Download the [base firmware package](https://lerh050.s-ul.eu/3aivec1x).
+‎
+‎
+‎
+3. Open WCHISPStudio and copy those parameters EXACTLY.
+You can change the language with ![](https://images2.imgbox.com/77/df/lBORKdVV_o.png) on the top bar
+-> ![](https://images2.imgbox.com/03/83/QqkYIHBv_o.png) <-
+‎
+‎
+‎
+4. Remove the knob and keycaps off your unit, then screw off the top plate.
+(bro tip: use the plate itself as a screw holder)
+-> ![](https://images2.imgbox.com/fd/23/FZ7oB7nQ_o.gif) <-
+Then get the screen off and hang it on the encoder shaft. You can use something to push it up or just shake it out like below.
+-> ![](https://images2.imgbox.com/f2/a2/MXWkPy6M_o.gif) <-
+‎
+‎
+‎
+5. Get anything conductive to short the 2 pins under the screen, then plug the unit into your PC *while doing so*.
+-> ![](https://images2.imgbox.com/b1/ec/OlkdH9Vl_o.gif) <-
+‎
+‎
+‎
+6. If something like this pops up on WCHISPStudio, you're doing it right.
+-> ![](https://images2.imgbox.com/84/75/vtrkuoZu_o.png) <-
+‎
+‎
+‎
+7. Now ![](https://images2.imgbox.com/93/f4/AZGkn5Ps_o.png), then unplug the unit and *repeat Step 5*
+‎
+‎
+‎
+8. Select the base firmware package, tick the box, and ![](https://images2.imgbox.com/6b/68/1t3G1Dc7_o.png)
+-> ![](https://images2.imgbox.com/b1/d5/eHG6bZhz_o.png) <-
+‎
+‎
+‎
+9. Replug your unit and it should be working now.
 ***
 ‎
 ‎
@@ -1172,6 +1229,90 @@ Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max R
 ![KS-20 Orange by Gateron](https://images2.imgbox.com/de/21/7PVkMNUm_o.png)	|	Gateron KS-20 Orange	|	38/50gf	|	None/4mm	|	Linear	|	~800-1300	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
 ![Random pic lmao](https://images2.imgbox.com/6a/50/4XL6tCE8_o.png)|	Yiqian Reds	|	30/50gf	|	None/4mm	|	Linear	|	~150-800	|	Please don't.	|	[Yiqian](https://detail.1688.com/offer/642498199922.html)	|	🍀	|
 
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Replacement Parts
+***
+[go back?](https://rentry.co/o3c#index)
+
+Knob: The knob uses a generic "EC11 Rotary Encoder", just google it. And make sure you get the correct knob for your encoder's shaft (or the other way around).lj
+*You will need a soldering iron to remove it.*
+
+Screen: Generic 0.96mm *spliced* TFT LCD display, [here's a link](https://aliexpress.com/i/33008278658.html) (there are cheaper offers out there, just google them)
+*You do not need any equipment to replace it, as the display's ribbon cable just pops in and out like a lego brick.*
+
+***
 ‎
 ‎
 ‎
@@ -1312,6 +1453,86 @@ Flash the firmware by double clicking the upgrade.bat file, always.
 - ***Firmware Version 1.2*** [**Software**](https://lerh050.s-ul.eu/bM15stkA), [**Firmware**](https://lerh050.s-ul.eu/izRnQsWk)
 
 - ***Firmware Version 1.3*** [**Software**](https://lerh050.s-ul.eu/bM15stkA), [**Firmware**](https://lerh050.s-ul.eu/7JRw4jYS)
+***
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+‎
+### Other Stuff
+***
+[go back?](https://rentry.co/o3c#index)
+
+- ***Top Plate Template***  [PSD File](https://lerh050.s-ul.eu/7QYd9IvQ)
+You can use this to make your own covers for the top plate. Or make your own top plate out of other materials.
+
 ***
 ‎
 ‎
@@ -1628,6 +1849,5 @@ A: On [GitHub](https://github.com/lerh050/o3c/). The site is looking for transla
 
 ***
 -> [***go back?***](https://rentry.co/o3c#index) ->
--> ***(click it again to return to dark mode)*** ->
-#-> light mode here (click🌙) ->
-#-> ↓↓↓↓↓↓↓ ->
+#-> light/dark mode here ->
+-> ![](https://images2.imgbox.com/c4/9c/zBPLmFQw_o.png) ->
