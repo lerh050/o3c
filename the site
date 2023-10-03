@@ -813,6 +813,7 @@ The end.
 ‎
 3. Open WCHISPStudio and copy those parameters EXACTLY.
 You can change the language with ![](https://images2.imgbox.com/77/df/lBORKdVV_o.png) on the top bar
+-> ![](https://images2.imgbox.com/bb/83/LO6Cc1KR_o.png) <-
 -> ![](https://images2.imgbox.com/03/83/QqkYIHBv_o.png) <-
 ‎
 ‎
@@ -1310,7 +1311,8 @@ Knob: The knob uses a generic "EC11 Rotary Encoder", just google it. And make su
 *You will need a soldering iron to remove it.*
 
 Screen: Generic 0.96mm *spliced* TFT LCD display, [here's a link](https://aliexpress.com/i/33008278658.html) (there are cheaper offers out there, just google them)
-*You do not need any equipment to replace it, just lift the clamp to remove the cable and to insert a new one in, just align it correctly into the slot and close the clamp back down again.*
+*You do not need any equipment to replace it, as the display's ribbon cable just pops in and out like a lego brick.*
+
 ***
 ‎
 ‎
