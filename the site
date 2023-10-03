@@ -92,7 +92,7 @@ Have fun!
 ‎
 ‎
 #Index
-#-> [Light/dark mode here....](https://rentry.co/o3c#light-mode-here-click) <-
+#-> [Light/dark mode here....](https://rentry.co/o3c#lightdark-mode-here-click-it) <-
 -> ==***Are you a newcomer? Check out Calibration - > Rundown of switch parameters first.***== <-
 [TOC2]
 
@@ -825,7 +825,7 @@ Then get the screen off and hang it on the encoder shaft. You can use something 
 ‎
 ‎
 ‎
-5. Get anything conductive to short the 2 pins under the screen, then plug the unit into your PC *while doing so*.
+5. Get anything conductive (metal tweezer, paperclip, etc...) to short the 2 pins under the screen, then plug the unit into your PC *while doing so*.
 -> ![](https://images2.imgbox.com/b1/ec/OlkdH9Vl_o.gif) <-
 ‎
 ‎
@@ -1310,8 +1310,7 @@ Knob: The knob uses a generic "EC11 Rotary Encoder", just google it. And make su
 *You will need a soldering iron to remove it.*
 
 Screen: Generic 0.96mm *spliced* TFT LCD display, [here's a link](https://aliexpress.com/i/33008278658.html) (there are cheaper offers out there, just google them)
-*You do not need any equipment to replace it, as the display's ribbon cable just pops in and out like a lego brick.*
-
+*You do not need any equipment to replace it, just lift the clamp to remove the cable and to insert a new one in, just align it correctly into the slot and close the clamp back down again.*
 ***
 ‎
 ‎
@@ -1849,5 +1848,5 @@ A: On [GitHub](https://github.com/lerh050/o3c/). The site is looking for transla
 
 ***
 -> [***go back?***](https://rentry.co/o3c#index) ->
-#-> light/dark mode here ->
+#-> light/dark mode here (click it) ->
 -> ![](https://images2.imgbox.com/c4/9c/zBPLmFQw_o.png) ->
