@@ -376,7 +376,7 @@ The end.
 
 1. **Calibrate** the switch PROPERLY. Press all the way down gently, until you feel the bottom out.
 
-2. Set [RT Top] and [RT Bottom] both to 0.00mm (do it with [RT Top] first)
+2. Set [RT Top] and [RT End] both to 0.00mm (do it with [RT Top] first)
 
 3. Your [Actuation Point] is whatever you want in [Trigger], minus how long you want it to be resulting in [Release]
 
