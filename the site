@@ -149,20 +149,13 @@ Have fun!
 
 3. Go to Calibration, and select which key to calibrate for, then proceed.
 
-4. Press all the way down to get the switch's full raw data.
-
-5. Now calibrate again, but only 95% or 90% of the full raw data of that switch (you have to hold steadily until you reach the value, there's no going back up)
-*For example*, if you got 1000 raw data, calibrate to around 950, 900 or whatever. It doesn't have to be really accurate.
-
-6. You're set to go.
+4. Gently press down until you feel the switch touching the bottom, then release immediately.
 
 ###### ->==**What**==<-
 
-The full range of the switch is already known by the keypad, separate from calibration.
+The "calibration" process is just defining the end point of the switch.
 
-The "calibration" process basically just downscales that range for actual use in the input handling process. Think converting a 1080p picture to 480p.
-
-Expending some data resolution/granularity is recommended to build some tolerance for more stability in input handling (eliminating sudden key releases, doubletaps, etc...)
+You should always do it gently because if you force it too hard, the latches on the switch will bend down and lower the switch, thus giving an incorrect reading.
 
 ***
 ‎
@@ -238,7 +231,7 @@ I want a `0.20mm` long [Actuation Point] at `0.30mm`
 What I would like to do is: 
 
 Set my [Trigger] to `0.30mm` so that the click registers exactly where I want it to be.
-and set my [Release] to `0.00mm` so that it also takes me exactly `0.20mm` to release the key. 
+and set my [Release] to `0.10mm` so that it also takes me exactly `0.20mm` to release the key. 
 
 
 ###### -> ==[RT Top] and [RT End]== <-
@@ -801,7 +794,8 @@ The end.
 ***
 [go back?](https://rentry.co/o3c#index)
 
-!!! danger This is still UNTESTED with the o3c++
+!!! danger For o3c++ users, there is a little permanent caveat. It's at the end of the guide.
+	If you're feeling bored and your o3c++ still works perfectly and you just want to dick around with this, then DON'T DO IT!!! The effect is NOT reversible!
 
 1. Download [WCHISPStudio](https://www.wch.cn/downloads/file/196.html) and install it.
 ‎
@@ -811,7 +805,7 @@ The end.
 ‎
 ‎
 ‎
-3. Open WCHISPStudio and copy those parameters EXACTLY.
+3. Open WCHISPStudio and COPY those parameters EXACTLY.
 You can change the language with ![](https://images2.imgbox.com/77/df/lBORKdVV_o.png) on the top bar
 -> ![](https://images2.imgbox.com/bb/83/LO6Cc1KR_o.png) <-
 -> ![](https://images2.imgbox.com/03/83/QqkYIHBv_o.png) <-
@@ -845,7 +839,17 @@ Then get the screen off and hang it on the encoder shaft. You can use something 
 ‎
 ‎
 ‎
-9. Replug your unit and it should be working now.
+9. Replug your unit and it should be working now, unless you use o3c++.  If so, read below.
+
+!!! info o3c++ users have extra stuff to do
+	Since the base firmware package in this guide was only built for o3c, o3c++ users have to do extra stuff when upgrading firmware (after doing the hardware recovery and for future updates).
+	The device will be seen as an o3c by the updater and thus be flashed with the incorrect o3c firmware, so to get around this they must: 
+	
+	1. Delete the "app_o3c.bin" file in the "firmware" folder
+	2. Rename "app_o3c_pp.bin" to "app_o3c.bin"
+	3. That's it. You can run the bat file to upgrade like usual now.
+	
+	Everything else work fine. The o3c++ that has been through this process will (surprisingly!) still be recognised correctly as an o3c++ on the site and software and all customisations will work just fine. (lmao what???)
 ***
 ‎
 ‎
@@ -1307,11 +1311,11 @@ Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max R
 ***
 [go back?](https://rentry.co/o3c#index)
 
-Knob: The knob uses a generic "EC11 Rotary Encoder", just google it. And make sure you get the correct knob for your encoder's shaft (or the other way around).lj
+Knob: The knob uses a generic "EC11 Rotary Encoder", just google it. And make sure you get the correct knob for your encoder's shaft (or the other way around).
 *You will need a soldering iron to remove it.*
 
 Screen: Generic 0.96mm *spliced* TFT LCD display, [here's a link](https://aliexpress.com/i/33008278658.html) (there are cheaper offers out there, just google them)
-*You do not need any equipment to replace it, as the display's ribbon cable just pops in and out like a lego brick.*
+*You do not need any equipment to replace it, just lift the clamp to get the cable out. Then push the new cable into the slot nicely and pull the clamp down again.*
 
 ***
 ‎
