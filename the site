@@ -205,10 +205,17 @@ You can always click again to exit the visualiser and see what value you're at i
 
 ###### -> ==[Trigger] and [Release]== <-
 
-Every distance before [Release] is  considered a "top deadzone", in that whatever happens there is effectively ignored.
-(for example, if my [Release] is `0.69mm` then `0.00mm` -> `0.68mm` is my "top deadzone") 
+Every distance before [Release] is considered a "top deadzone", in that everything that happens there is effectively ignored. *Everything.*
 
-Both of these constitute an [Actuation Point], like in normal switches.
+For example, 
+
+If my [Release] is `1.00mm` then `0.00mm` -> `0.99mm` is my "top deadzone".
+
+If I try to set my [RT Area] in this "top deadzone" it's ignored as well. (For example [RT Top] `0.10mm` and [RT End] `0.90mm` with both [RT Trigger] and [RT Release] at `0.05mm`, and nothing still happens.)
+
+
+
+[Trigger] and [Release] constitutes an [Actuation Point], like in normal switches.
 
 [Trigger] should always be bigger than [Release].
 
@@ -1222,18 +1229,35 @@ Due to how janky the editor is, it's recommended to artificially enlarge your ca
 ***
 [go back?](https://rentry.co/o3c#index)
 
-Max raws are grabbed on the **latest firmware version** and **north facing**
-(Max raw can change quite substantially depending on switch orientation, usually less when south facing)
+Max raws are grabbed on the **latest o3c firmware version** and **north facing**
+(max raw can be different between the latest o3c and o3c++ firmware versions sometimes, and there's the [South Facing Jank](https://rentry.co/o3c#south-facing-jank))
 
 (Note: you can drag/scroll the chart around)
 Pic | Name | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Mechanism | Max Raw (approx. range) | Where to get | OEM | Notes |
 :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-![Linear60 by Wooting](https://images2.imgbox.com/34/50/8UHZVGRH_o.png)|	Lekker Linear60	|	40/60gf	|	None/4mm	|	Linear	|	~800-1300	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear60)|	Gateron	||
-![Linear45 by Wooting](https://images2.imgbox.com/2c/42/TJeSq5mB_o.png)|	Lekker Linear45	|	30/45gf	|	None/4mm	|	Linear	|	~800-1300	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear45)|	Gateron	||
-![Omnipoint by Steelseries](https://images2.imgbox.com/6b/4c/c95wQp3i_o.png)	|	Steelseries Omnipoint	|	30/45gf	|	None/4mm	|	Linear	|	~800-1300	|	[Disassemble](https://steelseries.com/innovation/omnipoint-switches)	|	Gateron|	Scratchy!	|
-![KS-20 White by Gateron](https://images2.imgbox.com/ed/2b/Os8xKgNJ_o.png)	|	Gateron KS-20 White	|	30/50gf	|	None/4mm	|	Linear	|	~800-1300	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
-![KS-20 Orange by Gateron](https://images2.imgbox.com/de/21/7PVkMNUm_o.png)	|	Gateron KS-20 Orange	|	38/50gf	|	None/4mm	|	Linear	|	~800-1300	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
+![Linear60 by Wooting](https://images2.imgbox.com/34/50/8UHZVGRH_o.png)|	Lekker Linear60	|	40/60gf	|	None/4mm	|	Linear	|	~800-1400	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear60)|	Gateron	||
+![Linear45 by Wooting](https://images2.imgbox.com/2c/42/TJeSq5mB_o.png)|	Lekker Linear45	|	30/45gf	|	None/4mm	|	Linear	|	~800-1400	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear45)|	Gateron	||
+![Omnipoint by Steelseries](https://images2.imgbox.com/6b/4c/c95wQp3i_o.png)	|	Steelseries Omnipoint	|	30/45gf	|	None/4mm	|	Linear	|	~800-1400	|	[Disassemble](https://steelseries.com/innovation/omnipoint-switches)	|	Gateron|	Scratchy!	|
+![KS-20 White by Gateron](https://images2.imgbox.com/ed/2b/Os8xKgNJ_o.png)	|	Gateron KS-20 White	|	30/50gf	|	None/4mm	|	Linear	|	~800-1400	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
+![KS-20 Orange by Gateron](https://images2.imgbox.com/de/21/7PVkMNUm_o.png)	|	Gateron KS-20 Orange	|	38/50gf	|	None/4mm	|	Linear	|	~800-1400	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
 ![Random pic lmao](https://images2.imgbox.com/6a/50/4XL6tCE8_o.png)|	Yiqian Reds	|	30/50gf	|	None/4mm	|	Linear	|	~150-800	|	Please don't.	|	[Yiqian](https://detail.1688.com/offer/642498199922.html)	|	🍀	|
+
+#### -> South Facing Jank <- ####
+The LEDs on the o3c are mounted ***on top of the PCB, and protruding from it.***
+-> ![pic by me, traced by DragonLazer](https://images2.imgbox.com/dd/0c/9Br1CYn9_o.jpg) <-
+
+This causes some rather serious complications on south facing, like this:
+-> ![](https://images2.imgbox.com/a2/a2/f7D3Pysl_o.jpg) <-
+
+This forces at the switch at a weird angle resting on the LED, and thus reduces *max raw*, and makes the entire thing *sound like shit* because the switch is resting on the LED instead of hugging the PCB to make a warm, satisfying sound profile.
+
+Most switches *do not account for this*, and sometimes the ones that do aren't enough.
+-> ![](https://images2.imgbox.com/7e/32/L1ExH87t_o.jpg) <-
+-> ![](https://images2.imgbox.com/2b/a4/bOwPVp4U_o.jpg) <-
+
+Wooting doesn't have this issue because the LEDs on their products are mounted *under the PCB, thus completely leaving the socket flat* accomodating both orientations without any issues.
+-> ![idk who took this](https://images2.imgbox.com/16/98/yxJ059Hm_o.jpg) <-
+
 
 ***
 ‎
@@ -1452,7 +1476,7 @@ Those are download links directly grabbed from official channels (discord server
 ‎
 ‎
 ### Firmware & Software
-Flash the firmware by double clicking the upgrade.bat file, always.
+Flash the firmware by double clicking the `upgrade.bat` file, always.
 ***
 [go back?](https://rentry.co/o3c#index)
 
