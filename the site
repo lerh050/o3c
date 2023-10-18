@@ -711,14 +711,14 @@ The end.
 	A reboot might also be necessary.
 1. Plug in your keypad. If necessary, plug it in while *holding down the knob.*
 
-2. Go to `sayodevice.orgm` and select your device when asked
-![just like this.](https://images2.imgbox.orgm/d3/05/mJxNZfUa_o.png)
+2. Go to `sayodevice.com` and select your device when asked
+![just like this.](https://images2.imgbox.com/d3/05/mJxNZfUa_o.png)
 
 3. Go to the `Settings` tab and select the 3 boxes to Open, as shown below
-![Open the gates!](https://images2.imgbox.orgm/a6/18/AP3t9I0h_o.png)
+![Open the gates!](https://images2.imgbox.com/a6/18/AP3t9I0h_o.png)
 
 4.  Go to the `HID tab`, select the option at the very bottom (that's the factory reset code), then click on the arrow to send it to the device.
-![See you on the other side.](https://images2.imgbox.orgm/40/fb/1J5ederB_o.png)
+![See you on the other side.](https://images2.imgbox.com/40/fb/1J5ederB_o.png)
 
 5. Replug the device.
 !!! danger Still doesn't work?
@@ -813,36 +813,36 @@ The end.
 ‎
 ‎
 3. Open WCHISPStudio and COPY those parameters EXACTLY.
-You can change the language with ![](https://images2.imgbox.orgm/77/df/lBORKdVV_o.png) on the top bar
--> ![](https://images2.imgbox.orgm/bb/83/LO6Cc1KR_o.png) <-
--> ![](https://images2.imgbox.orgm/03/83/QqkYIHBv_o.png) <-
+You can change the language with ![](https://images2.imgbox.com/77/df/lBORKdVV_o.png) on the top bar
+-> ![](https://images2.imgbox.com/bb/83/LO6Cc1KR_o.png) <-
+-> ![](https://images2.imgbox.com/03/83/QqkYIHBv_o.png) <-
 ‎
 ‎
 ‎
 4. Remove the knob and keycaps off your unit, then screw off the top plate.
 (bro tip: use the plate itself as a screw holder)
--> ![](https://images2.imgbox.orgm/fd/23/FZ7oB7nQ_o.gif) <-
+-> ![](https://images2.imgbox.com/fd/23/FZ7oB7nQ_o.gif) <-
 Then get the screen off and hang it on the encoder shaft. You can use something to push it up or just shake it out like below.
--> ![](https://images2.imgbox.orgm/f2/a2/MXWkPy6M_o.gif) <-
+-> ![](https://images2.imgbox.com/f2/a2/MXWkPy6M_o.gif) <-
 ‎
 ‎
 ‎
 5. Get anything conductive (metal tweezer, paperclip, etc...) to short the 2 pins under the screen, then plug the unit into your PC *while doing so*.
--> ![](https://images2.imgbox.orgm/b1/ec/OlkdH9Vl_o.gif) <-
+-> ![](https://images2.imgbox.com/b1/ec/OlkdH9Vl_o.gif) <-
 ‎
 ‎
 ‎
 6. If something like this pops up on WCHISPStudio, you're doing it right.
--> ![](https://images2.imgbox.orgm/84/75/vtrkuoZu_o.png) <-
+-> ![](https://images2.imgbox.com/84/75/vtrkuoZu_o.png) <-
 ‎
 ‎
 ‎
-7. Now ![](https://images2.imgbox.orgm/93/f4/AZGkn5Ps_o.png), then unplug the unit and *repeat Step 5*
+7. Now ![](https://images2.imgbox.com/93/f4/AZGkn5Ps_o.png), then unplug the unit and *repeat Step 5*
 ‎
 ‎
 ‎
-8. Select the base firmware package, tick the box, and ![](https://images2.imgbox.orgm/6b/68/1t3G1Dc7_o.png)
--> ![](https://images2.imgbox.orgm/b1/d5/eHG6bZhz_o.png) <-
+8. Select the base firmware package, tick the box, and ![](https://images2.imgbox.com/6b/68/1t3G1Dc7_o.png)
+-> ![](https://images2.imgbox.com/b1/d5/eHG6bZhz_o.png) <-
 ‎
 ‎
 ‎
@@ -962,7 +962,7 @@ Aligned to the top left corner, every single piece of media (GIFs are split into
 
 3. Then they get put through the following algorithm:
 
--> ![ok](https://images2.imgbox.orgm/e0/2b/ZiuZoTAt_o.png) <-
+-> ![ok](https://images2.imgbox.com/e0/2b/ZiuZoTAt_o.png) <-
 
 This often results in a lower file size, but in rare cases it could be higher as well. This is due to the "converting to raw raster data" process.
 
@@ -971,13 +971,13 @@ This often results in a lower file size, but in rare cases it could be higher as
 
 Optimise your resolution when importing! This has a MAJOR impact. *For example*, if your GIF has a lot of frames, is square and should only fit to one side then set it to a lower resolution, like so:
 
--> ![xd](https://images2.imgbox.orgm/02/0c/9OqD9nfM_o.png) <-
+-> ![xd](https://images2.imgbox.com/02/0c/9OqD9nfM_o.png) <-
 
 !!! danger Aspect ratios below 1:1 (say, 79:80) WILL break the selector!!! Try to work around that for now.
 
 The processing is consistent and will result in around the same result (quality and file size after compression) all the time no matter how much you optimise your source material.
 
-Despite this, you should still do the downscaling yourself with better algorithms (ImageMagick at [ezgif](https://ezgif.orgm/resize)). The software sucks ass at scaling (very basic, literally just bilinear filtering and nothing else).
+Despite this, you should still do the downscaling yourself with better algorithms (ImageMagick at [ezgif](https://ezgif.com/resize)). The software sucks ass at scaling (very basic, literally just bilinear filtering and nothing else).
 
 Don't worry too much about source material quality because it'll almost always look like shit all the same in the end! Have fun.
 
@@ -1068,15 +1068,15 @@ Don't worry too much about source material quality because it'll almost always l
 
 3. Click the Images tab, click the`+` and a box should show up. Click `Open Picture` and select your media.
 
--> ![just like that](https://images2.imgbox.orgm/5a/0e/gTzrxTPv_o.png)<-
+-> ![just like that](https://images2.imgbox.com/5a/0e/gTzrxTPv_o.png)<-
 
 4. An adjustment box should pop up (it won't if you don't have anymore space), you can play around like below then click `OK` to import.
 
--> ![Krater needs his sugar.](https://images2.imgbox.orgm/b4/a9/0kJCLddp_o.gif) <-
+-> ![Krater needs his sugar.](https://images2.imgbox.com/b4/a9/0kJCLddp_o.gif) <-
 
 !!! danger Aspect ratios below 1:1 (say, 79:80) WILL break the selector!!! Try to work around that for now.
 
-5. Click this box ![yep, this](https://images2.imgbox.orgm/04/e8/t6VPesCO_o.png) to write the changes to your keypad.
+5. Click this box ![yep, this](https://images2.imgbox.com/04/e8/t6VPesCO_o.png) to write the changes to your keypad.
 
 ###### -> ==**What**== <-
 
@@ -1084,13 +1084,13 @@ Due to how janky the editor is, it's recommended to artificially enlarge your ca
 ‎
 ‎
 ‎
--> ![smol](https://images2.imgbox.orgm/93/65/UtlCNFkn_o.png) gets you ![this](https://images2.imgbox.orgm/81/06/vdbyx6e0_o.png) <-
+-> ![smol](https://images2.imgbox.com/93/65/UtlCNFkn_o.png) gets you ![this](https://images2.imgbox.com/81/06/vdbyx6e0_o.png) <-
 ‎
 ‎
 ‎
 ‎
 ‎
--> ![large](https://images2.imgbox.orgm/32/87/dsX2280t_o.png) gets you ![this](https://images2.imgbox.orgm/7f/c8/wXXTEa6y_o.png) <-
+-> ![large](https://images2.imgbox.com/32/87/dsX2280t_o.png) gets you ![this](https://images2.imgbox.com/7f/c8/wXXTEa6y_o.png) <-
 
 ***
 ‎
@@ -1234,31 +1234,31 @@ Max raws are grabbed on the **latest o3c firmware version** and **north facing**
 (Note: you can drag/scroll the chart around)
 Pic | Name | Mechanism | Start/BottomForce (gf) | Tactile/BottomOut (mm) | Max Raw (approx. range) | Where to get | OEM | Notes |
 :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-![Linear60 by Wooting](https://images2.imgbox.orgm/34/50/8UHZVGRH_o.png)|	Lekker Linear60	|	Linear	|	40/60gf	|	None/4mm	|	~800-1400	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear60)|	Gateron	||
-![Linear45 by Wooting](https://images2.imgbox.orgm/2c/42/TJeSq5mB_o.png)|	Lekker Linear45	|	Linear	|	30/45gf	|	None/4mm	|	~800-1400	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear45)|	Gateron	||
-![Omnipoint by Steelseries](https://images2.imgbox.orgm/6b/4c/c95wQp3i_o.png)	|	Steelseries Omnipoint	|	Linear	|	30/45gf	|	None/4mm	|	~800-1400	|	[Disassemble](https://steelseries.orgm/innovation/omnipoint-switches)	|	Gateron|	Scratchy, very loose fit in the o3c, 0/10	|
-![KS-20 White by Gateron](https://images2.imgbox.orgm/ed/2b/Os8xKgNJ_o.png)	|	Gateron KS-20 White	|	Linear	|	30/50gf	|	None/4mm	|	~800-1400	|	[MechKeyShop](https://mechkeys.orgm/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
-![KS-20 Orange by Gateron](https://images2.imgbox.orgm/de/21/7PVkMNUm_o.png)	|	Gateron KS-20 Orange	|	Linear	|	38/50gf	|	None/4mm	|	~800-1400	|	[MechKeyShop](https://mechkeys.orgm/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
-![Random pic lmao](https://images2.imgbox.orgm/6a/50/4XL6tCE8_o.png)|	Yiqian Reds	|	Linear	|	30/50gf	|	None/4mm	|	~150-800	|	Please don't.	|	[Yiqian](https://detail.1688.orgm/offer/642498199922.html)	|	🍀	|
+![Linear60 by Wooting](https://images2.imgbox.com/34/50/8UHZVGRH_o.png)|	Lekker Linear60	|	Linear	|	40/60gf	|	None/4mm	|	~800-1400	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear60)|	Gateron	||
+![Linear45 by Wooting](https://images2.imgbox.com/2c/42/TJeSq5mB_o.png)|	Lekker Linear45	|	Linear	|	30/45gf	|	None/4mm	|	~800-1400	|	[Wooting's Official Site](https://wooting.io/product/lekker-switch-linear45)|	Gateron	||
+![Omnipoint by Steelseries](https://images2.imgbox.com/6b/4c/c95wQp3i_o.png)	|	Steelseries Omnipoint	|	Linear	|	30/45gf	|	None/4mm	|	~800-1400	|	[Disassemble](https://steelseries.com/innovation/omnipoint-switches)	|	Gateron|	Scratchy, very loose fit in the o3c, 0/10	|
+![KS-20 White by Gateron](https://images2.imgbox.com/ed/2b/Os8xKgNJ_o.png)	|	Gateron KS-20 White	|	Linear	|	30/50gf	|	None/4mm	|	~800-1400	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
+![KS-20 Orange by Gateron](https://images2.imgbox.com/de/21/7PVkMNUm_o.png)	|	Gateron KS-20 Orange	|	Linear	|	38/50gf	|	None/4mm	|	~800-1400	|	[MechKeyShop](https://mechkeys.com/products/gateron-ks-20-magnetic-hall-sensor-switches)	|	Gateron	||
+![Random pic lmao](https://images2.imgbox.com/6a/50/4XL6tCE8_o.png)|	Yiqian Reds	|	Linear	|	30/50gf	|	None/4mm	|	~150-800	|	Please don't.	|	[Yiqian](https://detail.1688.com/offer/642498199922.html)	|	🍀	|
 
 #### -> South Facing Jank <- ####
 ***
 [go back?](https://rentry.org/o3c#index)
 
 The LEDs on the o3c are mounted ***on top of the PCB, and protruding from it.***
--> ![pic by me, traced by DragonLazer](https://images2.imgbox.orgm/dd/0c/9Br1CYn9_o.jpg) <-
+-> ![pic by me, traced by DragonLazer](https://images2.imgbox.com/dd/0c/9Br1CYn9_o.jpg) <-
 
 This causes some rather serious complications on south facing, like this:
--> ![](https://images2.imgbox.orgm/a2/a2/f7D3Pysl_o.jpg) <-
+-> ![](https://images2.imgbox.com/a2/a2/f7D3Pysl_o.jpg) <-
 
 This forces at the switch at a weird angle resting on the LED, and thus reduces *max raw*, and makes the entire thing *sound like shit* because the switch is resting on the LED instead of hugging the PCB to make a warm, satisfying sound profile.
 
 Most switches *do not account for this*, and sometimes the ones that do aren't enough.
--> ![](https://images2.imgbox.orgm/7e/32/L1ExH87t_o.jpg) <-
--> ![](https://images2.imgbox.orgm/2b/a4/bOwPVp4U_o.jpg) <-
+-> ![](https://images2.imgbox.com/7e/32/L1ExH87t_o.jpg) <-
+-> ![](https://images2.imgbox.com/2b/a4/bOwPVp4U_o.jpg) <-
 
 Wooting doesn't have this issue because the LEDs on their products are mounted *under the PCB, thus completely leaving the socket flat* accomodating both orientations without any issues.
--> ![idk who took this](https://images2.imgbox.orgm/16/98/yxJ059Hm_o.jpg) <-
+-> ![idk who took this](https://images2.imgbox.com/16/98/yxJ059Hm_o.jpg) <-
 
 
 ***
@@ -1341,7 +1341,7 @@ Wooting doesn't have this issue because the LEDs on their products are mounted *
 Knob: The knob uses a generic "EC11 Rotary Encoder", just google it. And make sure you get the correct knob for your encoder's shaft (or the other way around).
 *You will need a soldering iron to remove it.*
 
-Screen: Generic 0.96mm *spliced* TFT LCD display, [here's a link](https://aliexpress.orgm/i/33008278658.html) (there are cheaper offers out there, just google them)
+Screen: Generic 0.96mm *spliced* TFT LCD display, [here's a link](https://aliexpress.com/i/33008278658.html) (there are cheaper offers out there, just google them)
 *You do not need any equipment to replace it, just lift the clamp to get the cable out. Then push the new cable into the slot nicely and pull the clamp down again.*
 
 ***
@@ -1861,7 +1861,7 @@ You can use this to make your own covers for the top plate. Or make your own top
 ‎
 ‎
 ‎
-Q: ![Clyde](https://images2.imgbox.orgm/0c/13/2gSYPwNa_o.png)?
+Q: ![Clyde](https://images2.imgbox.com/0c/13/2gSYPwNa_o.png)?
 A: [Here](https://discord.gg/GjgSnaZ3Cu). That's the official Sayo Discord. You should know this already unless you didn't read the pamphlet or the link on it has already expired.
 ‎
 ‎
@@ -1877,9 +1877,9 @@ A: See below.
 ‎
 ‎
 Q: How do I contribute?
-A: On [GitHub](https://github.orgm/lerh050/o3c/). The site is looking for translations, proofreaders, or just DM @lerh050 on Discord if you think whatever else you have can be of reasonable use to the site, really.
+A: On [GitHub](https://github.com/lerh050/o3c/). The site is looking for translations, proofreaders, or just DM @lerh050 on Discord if you think whatever else you have can be of reasonable use to the site, really.
 
 ***
 -> [***go back?***](https://rentry.org/o3c#index) ->
 #-> light/dark mode here (click it) ->
--> ![](https://images2.imgbox.orgm/c4/9c/zBPLmFQw_o.png) ->
+-> ![](https://images2.imgbox.com/c4/9c/zBPLmFQw_o.png) ->
